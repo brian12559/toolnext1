@@ -1,0 +1,431 @@
+1546868164180	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qA9uTwd5XY9G"
+1546868164872	Marionette	INFO	Listening on port 2828
+[Child 14957] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 14957] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546868252617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0Ye0yeyTYsvf"
+1546868253282	Marionette	INFO	Listening on port 2828
+1546868549930	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NNjXcvmHmfwx"
+1546868550702	Marionette	INFO	Listening on port 2828
+[Child 17939] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 17939] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546869699095	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8g4wvqLSzRjH"
+1546869699888	Marionette	INFO	Listening on port 2828
+[Child 22234] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 22234] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546870988991	geckodriver	INFO	Listening on 127.0.0.1:59646
+1546870990109	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546870990740	Marionette	INFO	Listening on port 37180
+1546870990820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+[Child 25933] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 25933] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546876520343	geckodriver	INFO	Listening on 127.0.0.1:57470
+1546876521467	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546876522116	Marionette	INFO	Listening on port 37751
+1546876522196	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 5216] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 5216] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546876663125	geckodriver	INFO	Listening on 127.0.0.1:47482
+1546876664249	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546876664836	Marionette	INFO	Listening on port 38220
+1546876664940	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+[Child 7628] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 7628] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546882769795	geckodriver	INFO	Listening on 127.0.0.1:55818
+1546882770918	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546882772770	Marionette	INFO	Listening on port 35276
+1546882772856	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+[Child 17382] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 17382] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546884336622	geckodriver	INFO	Listening on 127.0.0.1:33490
+1546884337750	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546884339250	Marionette	INFO	Listening on port 43221
+1546884339322	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+[Child 22380] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 22380] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546887602634	geckodriver	INFO	Listening on 127.0.0.1:47828
+1546887603782	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546887604502	Marionette	INFO	Listening on port 34223
+1546887604604	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546887807812	geckodriver	INFO	Listening on 127.0.0.1:51123
+1546887808937	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546887809512	Marionette	INFO	Listening on port 36771
+1546887809590	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 30423] WARNING: pipe error (3): Connection reset by peer: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 30423] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 30423] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546889065024	geckodriver	INFO	Listening on 127.0.0.1:36892
+1546889066152	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546889067570	Marionette	INFO	Listening on port 35920
+1546889067680	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+[Child 2558] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 2558] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546889673400	geckodriver	INFO	Listening on 127.0.0.1:50306
+1546889674509	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546889675152	Marionette	INFO	Listening on port 40467
+1546889675234	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+[Child 6196] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 6196] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546890283000	geckodriver	INFO	Listening on 127.0.0.1:49055
+1546890284135	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546890285190	Marionette	INFO	Listening on port 39888
+1546890285272	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 9837] WARNING: pipe error (3): Connection reset by peer: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 9837] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 9837] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546890341861	geckodriver	INFO	Listening on 127.0.0.1:39844
+1546890343012	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546890343930	Marionette	INFO	Listening on port 44345
+1546890344032	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 12058] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 12058] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546890388883	geckodriver	INFO	Listening on 127.0.0.1:38334
+1546890390010	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546890390856	Marionette	INFO	Listening on port 38953
+1546890390932	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546890580553	geckodriver	INFO	Listening on 127.0.0.1:58275
+1546890581703	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546890582328	Marionette	INFO	Listening on port 37865
+1546890582418	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546890629305	geckodriver	INFO	Listening on 127.0.0.1:56873
+1546890630440	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546890631166	Marionette	INFO	Listening on port 45446
+1546890631254	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546890950517	geckodriver	INFO	Listening on 127.0.0.1:39395
+1546890951664	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546890952284	Marionette	INFO	Listening on port 35373
+1546890952376	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546891104331	geckodriver	INFO	Listening on 127.0.0.1:56091
+1546891105475	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546891107398	Marionette	INFO	Listening on port 46654
+1546891107498	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546891330989	geckodriver	INFO	Listening on 127.0.0.1:39074
+1546891332135	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546891332744	Marionette	INFO	Listening on port 43213
+1546891332854	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546891395290	geckodriver	INFO	Listening on 127.0.0.1:38449
+1546891396436	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546891397056	Marionette	INFO	Listening on port 42850
+1546891397146	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546891498983	geckodriver	INFO	Listening on 127.0.0.1:36643
+1546891500114	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546891501132	Marionette	INFO	Listening on port 38504
+1546891501228	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546891541030	geckodriver	INFO	Listening on 127.0.0.1:47166
+1546891542174	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546891542814	Marionette	INFO	Listening on port 45079
+1546891542892	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546891574231	geckodriver	INFO	Listening on 127.0.0.1:37778
+1546891575342	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546891575978	Marionette	INFO	Listening on port 34497
+1546891576056	Marionette	WARN	TLS certificate errors will be ignored for this session
+1546891659358	geckodriver	INFO	Listening on 127.0.0.1:37629
+1546891660506	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546891661362	Marionette	INFO	Listening on port 44941
+1546891661440	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+[Child 18460] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+[Child 18460] ###!!! ABORT: Aborting on channel error.: file /builddir/build/BUILD/firefox-52.8.0/firefox-52.8.0esr/ipc/glue/MessageChannel.cpp, line 2152
+1546963826390	geckodriver	INFO	Listening on 127.0.0.1:47833
+1546963827513	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546963828190	Marionette	INFO	Listening on port 45061
+1546963828272	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 106: unreachable code after return statement
+JavaScript warning: https://polarion.engineering.redhat.com/polarion/#/administration/license, line 79: unreachable code after return statement
+1546970696021	geckodriver	INFO	Listening on 127.0.0.1:48192
+1546970697157	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1546970698200	Marionette	INFO	Listening on port 38069
+1546970698284	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://app/modules/URLBarZoom.jsm, line 24: TypeError: win is null
+1557833686530	geckodriver	INFO	Listening on 127.0.0.1:42625
+1557833687723	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557833688361	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557833688361	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557833688381	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557833688408	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833688408	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833688408	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833689259	Marionette	INFO	Listening on port 40412
+1557833689341	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 7193, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /builddir/build/BUILD/firefox-60.6.1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 342
+1557833760166	geckodriver	INFO	Listening on 127.0.0.1:46507
+1557833761284	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557833761940	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557833761940	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557833761959	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557833761986	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833761986	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833761986	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833762820	Marionette	INFO	Listening on port 40852
+1557833762894	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 9603, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /builddir/build/BUILD/firefox-60.6.1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 342
+1557833846471	geckodriver	INFO	Listening on 127.0.0.1:49205
+1557833847697	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557833848269	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557833848270	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557833848300	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557833848340	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833848340	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833848341	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833849719	Marionette	INFO	Listening on port 35525
+1557833849814	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557833909298	geckodriver	INFO	Listening on 127.0.0.1:46575
+1557833910463	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557833910870	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557833910871	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557833910892	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557833910918	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833910918	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833910919	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557833911744	Marionette	INFO	Listening on port 38789
+1557833911787	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557834043401	geckodriver	INFO	Listening on 127.0.0.1:49548
+1557834044542	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557834044884	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557834044884	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557834044904	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557834044931	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834044931	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834044932	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834045767	Marionette	INFO	Listening on port 44292
+1557834045851	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557834175203	geckodriver	INFO	Listening on 127.0.0.1:54754
+1557834176357	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557834181970	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557834181970	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557834181989	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557834182014	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834182014	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834182015	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834182886	Marionette	INFO	Listening on port 35200
+1557834182915	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557834241969	geckodriver	INFO	Listening on 127.0.0.1:59061
+1557834243121	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557834243449	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557834243449	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557834243469	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557834243497	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834243497	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834243498	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834244323	Marionette	INFO	Listening on port 46190
+1557834244333	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557834297843	geckodriver	INFO	Listening on 127.0.0.1:51735
+1557834298995	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557834299412	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557834299412	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557834299434	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557834299465	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834299465	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834299465	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557834300425	Marionette	INFO	Listening on port 40240
+1557834300514	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557835226708	geckodriver	INFO	Listening on 127.0.0.1:52535
+1557835227871	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557835233292	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557835233292	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557835233316	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557835233349	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557835233349	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557835233350	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557835234276	Marionette	INFO	Listening on port 34891
+1557835234331	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557835926700	geckodriver	INFO	Listening on 127.0.0.1:60440
+1557835927851	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557835928239	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557835928240	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557835928259	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557835928285	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557835928285	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557835928285	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557835929150	Marionette	INFO	Listening on port 45677
+1557835929170	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557836115881	geckodriver	INFO	Listening on 127.0.0.1:40533
+1557836117021	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557836117713	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557836117713	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557836117734	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557836117764	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836117764	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836117765	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836118612	Marionette	INFO	Listening on port 35577
+1557836118633	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557836284733	geckodriver	INFO	Listening on 127.0.0.1:55852
+1557836285894	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557836286252	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557836286253	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557836286273	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557836286299	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836286299	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836286299	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836287204	Marionette	INFO	Listening on port 40317
+1557836287301	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557836328085	geckodriver	INFO	Listening on 127.0.0.1:57101
+1557836329203	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557836329654	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557836329654	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557836329677	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557836329709	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836329709	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836329710	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836330566	Marionette	INFO	Listening on port 42493
+1557836330615	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557836427121	geckodriver	INFO	Listening on 127.0.0.1:36507
+1557836428287	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557836428670	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557836428670	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557836428687	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557836428713	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836428713	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836428714	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836429603	Marionette	INFO	Listening on port 39839
+1557836429695	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557836586815	geckodriver	INFO	Listening on 127.0.0.1:48094
+1557836587951	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557836588638	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557836588638	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557836588656	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557836588682	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836588682	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836588682	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836589551	Marionette	INFO	Listening on port 37294
+1557836589574	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557836612627	geckodriver	INFO	Listening on 127.0.0.1:44268
+1557836613755	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557836614169	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557836614169	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557836614191	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557836614221	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836614221	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836614221	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836615204	Marionette	INFO	Listening on port 42663
+1557836615280	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 23289, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /builddir/build/BUILD/firefox-60.6.1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 342
+1557836943311	geckodriver	INFO	Listening on 127.0.0.1:39323
+1557836944442	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557836946898	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557836946898	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557836946916	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557836946943	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836946943	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836946943	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557836947863	Marionette	INFO	Listening on port 45957
+1557836947869	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557839663813	geckodriver	INFO	Listening on 127.0.0.1:40626
+1557839664956	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557839665308	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557839665309	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557839665326	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557839665354	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839665354	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839665354	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839666184	Marionette	INFO	Listening on port 34499
+1557839666265	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557839733827	geckodriver	INFO	Listening on 127.0.0.1:40252
+1557839734963	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557839735313	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557839735313	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557839735333	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557839735360	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839735360	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839735360	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839736212	Marionette	INFO	Listening on port 42240
+1557839736283	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sandbox.xpand-it.com/s/bfc789e9beb5a08f02a1302960a737ef-CDN/-wxf092/713001/b6b48b2829824b869586ac216d119363/8fdc4dab3d2d5d5032974cef7819a9f2/_/download/contextbatch/js/_super/batch.js?locale=en-US&spectrum=true, line 25: Error: No jira-agile/rapid/analytics-tracker
+1557839789404	geckodriver	INFO	Listening on 127.0.0.1:47919
+1557839790539	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557839790900	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557839790900	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557839790922	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557839790952	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839790952	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839790952	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839791839	Marionette	INFO	Listening on port 43958
+1557839791853	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557839957885	geckodriver	INFO	Listening on 127.0.0.1:48602
+1557839959039	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557839959519	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557839959520	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557839959539	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557839959565	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839959565	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839959565	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839960467	Marionette	INFO	Listening on port 46314
+1557839960551	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557839975267	geckodriver	INFO	Listening on 127.0.0.1:48824
+1557839976423	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557839976745	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557839976745	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557839976764	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557839976798	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839976798	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839976798	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557839977572	Marionette	INFO	Listening on port 42699
+1557839977632	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557840151605	geckodriver	INFO	Listening on 127.0.0.1:60219
+1557840152748	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557840153362	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557840153362	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557840153384	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557840153416	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840153416	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840153416	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840154273	Marionette	INFO	Listening on port 46738
+1557840154359	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557840169022	geckodriver	INFO	Listening on 127.0.0.1:49203
+1557840170170	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557840175637	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557840175637	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557840175658	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557840175688	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840175688	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840175688	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840176596	Marionette	INFO	Listening on port 38696
+1557840176611	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557840191118	geckodriver	INFO	Listening on 127.0.0.1:46638
+1557840192264	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557840192586	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557840192586	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557840192603	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557840192631	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840192631	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840192631	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557840193429	Marionette	INFO	Listening on port 41320
+1557840193482	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557927471053	geckodriver	INFO	Listening on 127.0.0.1:34089
+1557927472249	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1557927472747	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1557927472747	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing storage: An unexpected property was found in the WebExtension manifest.
+1557927472771	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+1557927472808	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557927472808	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557927472808	addons.xpi	WARN	Add-on WalkmeExtension@walkme.com is not correctly signed.
+1557927473896	Marionette	INFO	Listening on port 44484
+1557927473961	Marionette	WARN	TLS certificate errors will be ignored for this session
