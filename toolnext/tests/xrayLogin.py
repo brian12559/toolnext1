@@ -4,15 +4,18 @@ Created on Aug 31, 2018
 @author: bmurray
 '''
 
-from selenium import webdriver
-#from pages import *
-from pages.logInPage import LoginPage1, LogoutPage
-from pages.base import Page
-#from pages.LogInPage import *
-import logging, time, sys
+import logging
+import sys,os
+import time
+import unittest
 from optparse import OptionParser
-import pytest, unittest
- 
+
+#sys.path.insert(0, os.path.dirname(os.path.dirname( __file__ )))
+
+from pages.base import Page
+from pages.logInPage import LoginPage1, LogoutPage
+from selenium import webdriver
+
 # setting the logging module to the console
 logging.basicConfig(format='%(asctime)s [%(levelname)s] (%(threadName)-2s) %(message)s', level=logging.INFO ,)
 
