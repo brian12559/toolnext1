@@ -10,7 +10,7 @@ import time
 import unittest
 from optparse import OptionParser
 
-#sys.path.insert(0, os.path.dirname(os.path.dirname( __file__ )))
+sys.path.insert(0, os.path.dirname(os.path.dirname( __file__ )))
 
 from pages.base import Page
 from pages.logInPage import LoginPage1, LogoutPage
@@ -41,7 +41,7 @@ class xrayLogin(unittest.TestCase):
         
 
     def test_login(self):
-        for z in range(1,50):
+        for z in range(1,3):
             if self.browser == "ff":
                 self.driver = webdriver.Firefox()
             else:
