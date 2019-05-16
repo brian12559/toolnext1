@@ -56,6 +56,7 @@ class xrayLogin(unittest.TestCase):
             self.loader.open(self.xray_url) #or this
             self.loginPage.login_with_valid_user(self.user, self.password)
             time.sleep(1)
+            logging.info("Closing browser")
             self.driver.close()
 
 if __name__ == "__main__": # allows unittest to start by running this class file
