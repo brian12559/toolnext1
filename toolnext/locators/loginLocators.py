@@ -27,6 +27,12 @@ class LoginPageLocators(object):
     SUBMITXRAY = (By.ID, 'login-form-submit')
     ISSUEKEYXRAY = (By.ID, 'raven-test-filter-contains-text')
 
+    #for testlab
+    USERNAMETL = (By.ID, 'isc_Z')
+    PASSWORDTL = (By.ID, 'isc_13')
+    SUBMITTL = (By.CSS_SELECTOR, '.buttonOver')
+    TESTCASEICONTL  = (By.XPATH, '//img[@src[contains(., \'testdesign.png\')]]')
+
   
 class LogoutPageLocators(object):
     GEARICONrec    = (By.CSS_SELECTOR, 'img.gwt-Image')  #what IDE recorded
