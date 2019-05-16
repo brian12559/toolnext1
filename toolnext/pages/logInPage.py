@@ -7,7 +7,7 @@ Created on August 31, 2018
 
 from pages.base import Page
 from locators.loginLocators import *
-import logging, time
+import logging, time, os
 from selenium.webdriver.support import expected_conditions as EC
 
 # Page objects are written in this module.
@@ -50,7 +50,8 @@ class LoginPage1(Page):
         self.click_login_button()
         time.sleep(5)
 
-    def loginuserxray(self, username, pw):  # for devel and sr2
+    def loginuserxray(self, username, pw):
+        homedir = os.path.expanduser('~')
         logging.info("Entering username: %s using %s" % (username, LoginPageLocators.USERNAMEXRAY))
         # might need clear
         self.enter_username(username)
@@ -60,13 +61,14 @@ class LoginPage1(Page):
         startloading = time.time()
         self.click_login_button()
         elapsedtime = time.time() - startloading
+        time.sleep(2)  #it always takes at least 2 secs
         while not (self.driver.find_element(*LoginPageLocators.ISSUEKEYXRAY)):
             elapsedtime = time.time() - startloading
             logging.info("still waiting...%s" % str(elapsedtime))
-            time.sleep(3)
+            time.sleep(1)
         ltime = str((time.time() - startloading))
         logging.info("time to load XRAY -> %s" % ltime)
-        with open("/home/bmurray//LoginTime.csv", "a") as myfile:
+        with open("%s/LoginTime.csv" % homedir, "a") as myfile:
             myfile.write(time.ctime() + "," + ltime +  "\n")
 
 
