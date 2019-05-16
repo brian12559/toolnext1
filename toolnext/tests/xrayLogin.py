@@ -8,6 +8,7 @@ import logging
 import sys,os
 import time
 import unittest
+import ConfigParser
 from optparse import OptionParser
 
 sys.path.insert(0, os.path.dirname(os.path.dirname( __file__ )))
@@ -24,15 +25,36 @@ class xrayLogin(unittest.TestCase):
 
     def setUp(self):
         #set variables, load the browser
-        logging.debug("Function Setup()") 
-        self.xray_url = 'https://sandbox.xpand-it.com/secure/Dashboard.jspa'
-        self.xray_url = "https://sandbox.xpand-it.com/projects/TOOL1?selectedItem=com.xpandit.plugins.xray:test-panel"
+        logging.info("Function Setup()")
+        self.url = 'https://sandbox.xpand-it.com/secure/Dashboard.jspa'
+        self.url = "https://sandbox.xpand-it.com/projects/TOOL1?selectedItem=com.xpandit.plugins.xray:test-panel"
+        #the defaults
         self.user = 'user27'
         self.password = "rhtoolnext"
         self.browser="ff"
-        #self.browser="chrome"
-        logging.info("Launching browser -> %s" % self.browser)
+        self.myLoops = 5
 
+        # read file ini test params file from this folder to get parameters
+        if (os.path.isfile('toolnext.ini')):
+            config = ConfigParser.ConfigParser()
+            config.read('toolnext.ini')
+            sectionlist = config.sections()
+            section = 'XRAY_TEST_PARAMS'
+            self.testdatadict = {}
+            if section in sectionlist:
+                self.testdatadict = dict(config.items(section))
+            if ('loops' in self.testdatadict):
+                self.myLoops = int(self.testdatadict['loops'])
+            if ('user' in self.testdatadict):
+                self.user = self.testdatadict['user']
+            if ('password' in self.testdatadict):
+                self.password = self.testdatadict['password']
+            if ('url' in self.testdatadict):
+                self.url = self.testdatadict['url']
+
+        logging.info("Launching browser -> %s" % self.browser)
+        logging.info("loading url %s" %self.url)
+        logging.info("looping %s times using id=%s and password=%s" % (str(self.myLoops), self.user, self.password))
          
     def tearDown(self):
         #close the browser
@@ -41,7 +63,7 @@ class xrayLogin(unittest.TestCase):
         
 
     def test_login(self):
-        for z in range(1,10):
+        for z in range(1,self.myLoops+1):
             if self.browser == "ff":
                 self.driver = webdriver.Firefox()
             else:
@@ -52,8 +74,8 @@ class xrayLogin(unittest.TestCase):
             self.loginPage = LoginPage1(self.driver)
             self.logoutPage = LogoutPage(self.driver)
             logging.info("Test logging into Xray")
-            logging.info("loading url %s" % self.xray_url)
-            self.loader.open(self.xray_url) #or this
+            logging.info("loading url %s" % self.url)
+            self.loader.open(self.url) #or this
             self.loginPage.login_with_valid_user(self.user, self.password)
             time.sleep(1)
             logging.info("Closing browser")
@@ -65,12 +87,13 @@ if __name__ == "__main__": # allows unittest to start by running this class file
     
     # command line parser
     parser = OptionParser(usage='%prog [options] ', version='0.1',)
-    parser.add_option("-n", "--browser", dest="browser", default="ff", help='Defines the browser to test')
+    parser.add_option("-n", "--loops", dest="myLoops", default=10, help='Defines how many cycles')
     
     # read the command line parameters now
-    (options, args) = parser.parse_args(argv)    
+    (options, args) = parser.parse_args(argv)
+    myLoops=options.loops
     logging.info("Command Line: %s" % sys.argv)
-    logging.info(options.browser)
+    logging.info(options.loops)
     
     unittest.main() 
     
