@@ -37,20 +37,22 @@ class testlabAPItest(unittest.TestCase):
         # This works
         company = 'ToolNext'
         apiKey = '550e8400-e29b-41d4-a716-44665544'
-        restAdd = "https://rhtoolnext.melioratestlab.com/api/defect/ToolNext"
-        requests.get(restAdd, auth=('user', '550e8400-e29b-41d4-a716-44665544'))
+        res = requests.get('https://rhtoolnext.melioratestlab.com/api/defect/ToolNext',
+                           auth=('user', apiKey))
+        logging.debug("%s - %s" % (res.status_code, res.text))
+        #assert res.ok   # this fails with 404
 
         # Works to get all test cases in project=TLABTMPL
         res = requests.get('https://rhtoolnext.melioratestlab.com/api/testcase/TLABTMPL',
-                           auth=('user', '550e8400-e29b-41d4-a716-44665544'))
-        print res.status_code
-        print res.text
+                           auth=('user', apiKey))
+        logging.debug("%s - %s" % (res.status_code, res.text))
+        assert res.ok
 
         # Works to get the single test case data
         res = requests.get('https://rhtoolnext.melioratestlab.com/api/testcase/TLABTMPL/227091',
-                           auth=('user', '550e8400-e29b-41d4-a716-44665544'))
-        print res.status_code
-        print res.text
+                           auth=('user', apiKey))
+        logging.debug("%s - %s" % (res.status_code, res.text))
+        assert res.ok
 
 
 if __name__ == "__main__":   # allows unittest to start by running this class file
