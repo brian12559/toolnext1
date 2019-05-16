@@ -1,7 +1,0 @@
-<testsuites>
-               <properties>
-                   <property name="polarion-project-id" value="Polarion"/>
-                   <property name="polarion-testrun-id" value="ResI_Accept-dummy"/>
-                   <property name="polarion-testrun-status-id" value="notrun"/>
-               </properties>
-           </testsuites>
