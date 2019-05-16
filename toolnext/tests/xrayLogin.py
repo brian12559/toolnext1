@@ -41,7 +41,7 @@ class xrayLogin(unittest.TestCase):
         
 
     def test_login(self):
-        for z in range(1,3):
+        for z in range(1,10):
             if self.browser == "ff":
                 self.driver = webdriver.Firefox()
             else:
@@ -57,7 +57,7 @@ class xrayLogin(unittest.TestCase):
             self.loginPage.login_with_valid_user(self.user, self.password)
             time.sleep(1)
             logging.info("Closing browser")
-            self.driver.close()
+            self.driver.quit()
 
 if __name__ == "__main__": # allows unittest to start by running this class file
     #global loglevel 
