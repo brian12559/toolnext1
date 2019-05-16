@@ -19,6 +19,9 @@ class MainPage(Page):
 
      
 class LoginPage1(Page):
+    def check_xray_loaded(self):
+        return True if self.find_element(*LoginPageLocators.ISSUEKEYXRAY) else False
+
     def check_page_loaded(self):
         return True if self.find_element(*LoginPageLocators.USERNAME) else False
     
@@ -50,6 +53,26 @@ class LoginPage1(Page):
         self.click_login_button()
         time.sleep(5)
 
+    def loginuserxrayOLD(self, username, pw):
+        homedir = os.path.expanduser('~')
+        logging.info("Entering username: %s using %s" % (username, LoginPageLocators.USERNAMEXRAY))
+        # might need clear
+        self.enter_username(username)
+        logging.info("Entering password: %s using %s" % (pw, LoginPageLocators.PASSWORDXRAY))
+        self.enter_password(pw)
+        logging.info("clicking 'LOG IN' button using {0}".format(LoginPageLocators.SUBMITXRAY))
+        startloading = time.time()
+        self.click_login_button()
+        elapsedtime = time.time() - startloading
+        while not (self.driver.find_element(*LoginPageLocators.ISSUEKEYXRAY)):
+            elapsedtime = time.time() - startloading
+            logging.info("still waiting...%s" % str(elapsedtime))
+            time.sleep(1)
+        ltime = str((time.time() - startloading))
+        logging.info("time to load XRAY -> %s" % ltime)
+        with open("%s/LoginTime.csv" % homedir, "a") as myfile:
+            myfile.write(time.ctime() + "," + ltime +  "\n")
+
     def loginuserxray(self, username, pw):
         homedir = os.path.expanduser('~')
         logging.info("Entering username: %s using %s" % (username, LoginPageLocators.USERNAMEXRAY))
@@ -61,15 +84,23 @@ class LoginPage1(Page):
         startloading = time.time()
         self.click_login_button()
         elapsedtime = time.time() - startloading
-        time.sleep(2)  #it always takes at least 2 secs
-        while not (self.driver.find_element(*LoginPageLocators.ISSUEKEYXRAY)):
-            elapsedtime = time.time() - startloading
-            logging.info("still waiting...%s" % str(elapsedtime))
-            time.sleep(1)
-        ltime = str((time.time() - startloading))
-        logging.info("time to load XRAY -> %s" % ltime)
-        with open("%s/LoginTime.csv" % homedir, "a") as myfile:
-            myfile.write(time.ctime() + "," + ltime +  "\n")
+        #time.sleep(2)  # it always takes at least 2 secs
+        while elapsedtime < 60:
+            try:
+                self.driver.find_element(*LoginPageLocators.ISSUEKEYXRAY).clear()
+                logging.info("Jira issue field exists, so Xray is loaded")
+                break
+            except:
+                elapsedtime = time.time() - startloading
+                logging.info("still waiting...%s" % str(elapsedtime))
+                time.sleep(1)
+        if self.check_xray_loaded():
+            ltime = str((time.time() - startloading))
+            logging.info("time to load XRAY -> %s" % ltime)
+            with open("%s/LoginTime.csv" % homedir, "a") as myfile:
+                myfile.write(time.ctime() + "," + ltime + "\n")
+        else:
+            Logging.info("Xray never loaded")
 
 
     def login_with_valid_user(self, username, pw):
