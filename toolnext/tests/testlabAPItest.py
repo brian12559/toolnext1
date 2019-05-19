@@ -95,7 +95,7 @@ class testlabAPItest(unittest.TestCase):
 
           "testCaseMappingField": "Automated",
           "importTestCases": True,
-          "importTestCasesRootCategory": "import",
+          "importTestCasesRootCategory": "import/%s" % time.time(),
 
           #"robotCatenateParentKeywords": true
           #"xml": "<jUnit/xUnit XML content or Robot Framework output XML>",
