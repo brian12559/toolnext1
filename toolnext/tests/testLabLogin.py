@@ -10,7 +10,6 @@ import os
 import time
 import unittest
 import ConfigParser
-from optparse import OptionParser
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
@@ -37,25 +36,27 @@ class testLabLogin(unittest.TestCase):
         self.password = "rhtoolnext"
         self.browser = "ff"
         self.myLoops = 5
+        self.config_file = 'tests/toolnext.ini'
 
         # read file ini test params file from this folder to get parameters
-        if (os.path.isfile('toolnext.ini')):
+        if os.path.isfile(self.config_file):
             config = ConfigParser.ConfigParser()
-            config.read('toolnext.ini')
+            config.read(self.config_file)
             sectionlist = config.sections()
             section = 'TESTLAB_TEST_PARAMS'
             self.testdatadict = {}
             if section in sectionlist:
                 self.testdatadict = dict(config.items(section))
-            if ('loops' in self.testdatadict):
+            logging.error(self.testdatadict)
+            if 'loops' in self.testdatadict:
                 self.myLoops = int(self.testdatadict['loops'])
-            if ('user' in self.testdatadict):
+            if 'user' in self.testdatadict:
                 self.user = self.testdatadict['user']
-            if ('password' in self.testdatadict):
+            if 'password' in self.testdatadict:
                 self.password = self.testdatadict['password']
-            if ('url' in self.testdatadict):
+            if 'url' in self.testdatadict:
                 self.url = self.testdatadict['url']
-            if ('browser' in self.testdatadict):
+            if 'browser' in self.testdatadict:
                 self.browser = self.testdatadict['browser']
 
         logging.info("Launching browser -> %s" % self.browser)
