@@ -33,6 +33,14 @@ class LoginPageLocators(object):
     SUBMITTL = (By.CSS_SELECTOR, '.buttonOver')
     TESTCASEICONTL  = (By.XPATH, '//img[@src[contains(., \'testdesign.png\')]]')
 
+
+    #for PT
+    USERNAMEPT = (By.NAME, 'email')
+    PASSWORDPT = (By.NAME, 'password')
+    SUBMITPT = (By.CSS_SELECTOR, '.btn')
+    #TESTCASEPT  = (By.linkText, 'Test Library')
+    TESTCASEPT = (By.XPATH, '//img[@alt[contains(., \'Rhlogo\')]]')
+
   
 class LogoutPageLocators(object):
     GEARICONrec    = (By.CSS_SELECTOR, 'img.gwt-Image')  #what IDE recorded

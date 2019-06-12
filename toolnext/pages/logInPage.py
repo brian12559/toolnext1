@@ -24,6 +24,9 @@ class LoginPage1(Page):
     def check_xray_loaded(self):
         return True if self.find_element(*LoginPageLocators.ISSUEKEYXRAY) else False
 
+    def check_pt_loaded(self):
+        return True if self.find_element(*LoginPageLocators.TESTCASEPT) else False
+
     def check_tl_loaded(self):
         return True if self.find_element(*LoginPageLocators.TESTCASEICONTL) else False
 
@@ -32,6 +35,9 @@ class LoginPage1(Page):
     
     def enter_username(self, username):
         self.driver.find_element(*LoginPageLocators.USERNAMEXRAY).send_keys(username)
+
+    def enter_usernamePT(self, username):
+        self.driver.find_element(*LoginPageLocators.USERNAMEPT).send_keys(username)
 
     def enter_usernameTL(self, username):
         actions = ActionChains(self.driver)
@@ -45,6 +51,9 @@ class LoginPage1(Page):
     def enter_password(self, pw):
         self.driver.find_element(*LoginPageLocators.PASSWORDXRAY).send_keys(pw)
 
+    def enter_passwordPT(self, pw):
+        self.driver.find_element(*LoginPageLocators.PASSWORDPT).send_keys(pw)
+
     def enter_passwordTL(self, pw):
         actions = ActionChains(self.driver)
         actions.send_keys(Keys.TAB + 'rhtoolnext')
@@ -56,6 +65,9 @@ class LoginPage1(Page):
     
     def click_login_button(self):
         self.driver.find_element(*LoginPageLocators.SUBMITXRAY).click()
+
+    def click_login_buttonPT(self):
+        self.driver.find_element(*LoginPageLocators.SUBMITPT).click()
 
     def click_login_buttonTL(self):
         actions = ActionChains(self.driver)
@@ -155,6 +167,38 @@ class LoginPage1(Page):
         else:
             Logging.info("TestLab never loaded")
 
+    def loginuserPT(self, username, pw):
+        time.sleep(1)
+        homedir = os.path.expanduser('~')
+        logging.info("Entering username: %s using %s" % (username, LoginPageLocators.USERNAMEPT))
+        # might need clear
+        self.enter_usernamePT(username)
+        logging.info("clicking 'LOG IN' button using {0}".format(LoginPageLocators.SUBMITPT))
+        self.click_login_buttonPT()
+        logging.info("Entering password: %s using %s" % (pw, LoginPageLocators.PASSWORDPT))
+        self.enter_passwordPT(pw)
+        logging.info("clicking 'LOG IN' button using {0}".format(LoginPageLocators.SUBMITPT))
+        startloading = time.time()
+        self.click_login_buttonPT()
+        elapsedtime = time.time() - startloading
+        # time.sleep(2)  # it always takes at least 2 secs
+        while elapsedtime < 60:
+            try:
+                if self.check_pt_loaded():
+                    logging.info("PractiTest Link exist, so PractiTest is loaded")
+                    break
+            except:
+                elapsedtime = time.time() - startloading
+                logging.info("still waiting...%s" % str(elapsedtime))
+                time.sleep(1)
+        if self.check_pt_loaded():
+            ltime = str((time.time() - startloading))
+            logging.info("time to load PractiTest -> %s" % ltime)
+            with open("%s/LoginTime.csv" % homedir, "a") as myfile:
+                myfile.write(time.ctime() + "," + ltime + "\n")
+        else:
+            Logging.info("PractiTest never loaded")
+
 
     def login_with_valid_user(self, username, pw):
         self.loginuserxray(username, pw)
@@ -162,6 +206,11 @@ class LoginPage1(Page):
 
     def login_with_valid_userTL(self, username, pw):
         self.loginuserTL(username, pw)
+        return HomePage(self.driver)
+
+
+    def login_with_valid_userPT(self, username, pw):
+        self.loginuserPT(username, pw)
         return HomePage(self.driver)
 
     def login_with_invalid_user(self, username, pw, rememberme=False):
