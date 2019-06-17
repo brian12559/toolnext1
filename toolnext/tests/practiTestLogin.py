@@ -27,7 +27,7 @@ class practiTestLogin(unittest.TestCase):
         #set variables, load the browser
         logging.info("Function Setup()")
         self.url = 'https://prod.practitest.com/'
-        self.url = "https://prod.practitest.com/l"
+        self.url = "https://prod.practitest.com/"
         #the defaults
         self.user = 'bmurray@redhat.com'
         self.password = "!RHtoolnext1"
