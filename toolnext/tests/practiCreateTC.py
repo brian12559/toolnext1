@@ -7,6 +7,7 @@ Created on Aug 31, 2018
 import logging
 import sys,os
 import time
+import datetime
 import unittest
 import ConfigParser
 from optparse import OptionParser
@@ -63,12 +64,17 @@ class practiTestLogin(unittest.TestCase):
         
 
     def test_login(self):
+        homedir = os.path.expanduser('~')
         for z in range(1,self.myLoops+1):
             if self.browser == "ff":
                 self.driver = webdriver.Firefox()
             else:
                 self.driver = webdriver.Chrome()
 
+
+            #set title of test
+            myTitle = datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")
+            myTitle = "test automagically created at %s" % myTitle
             # classes used in this file
             self.loader = Page(self.driver)
             self.loginPage = LoginPage1(self.driver)
@@ -77,10 +83,21 @@ class practiTestLogin(unittest.TestCase):
             logging.info("loading url %s" % self.url)
             self.loader.open(self.url) #or this
             try:
+                startloading = time.time()
                 self.loginPage.login_with_valid_userPT(self.user, self.password)
                 #time.sleep(1)
+                self.loginPage.createTCPT(myTitle)
+                if ('success' in self.driver.page_source):
+                    logging.info("%s created successfully" % myTitle)
+                    ltime = str((time.time() - startloading))
+                    logging.info("time to load PractiTest -> %s" % ltime)
+                    with open("%s/LoginCreateTCtime.csv" % homedir, "a") as myfile:
+                        myfile.write(time.ctime() + "," + ltime + "\n")
+                else:
+                    logging.info("test failed to create")
+
             except:
-                logging.info("failed to login")
+                logging.info("failed to login or create test case")
 
             logging.info("Closing browser")
             self.driver.quit()

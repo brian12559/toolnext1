@@ -175,9 +175,14 @@ class LoginPage1(Page):
         self.enter_usernamePT(username)
         logging.info("clicking 'LOG IN' button using {0}".format(LoginPageLocators.SUBMITPT))
         self.click_login_buttonPT()
-        time.sleep(1)
+        #time.sleep(1)
         logging.info("Entering password: %s using %s" % (pw, LoginPageLocators.PASSWORDPT))
-        self.enter_passwordPT(pw)
+        try:
+            #sometimes its too fast and pw box isnt there yet
+            self.enter_passwordPT(pw)
+        except:
+            time.sleep(1)
+            self.enter_passwordPT(pw)
         logging.info("clicking 'LOG IN' button using {0}".format(LoginPageLocators.SUBMITPT))
         startloading = time.time()
         self.click_login_buttonPT()
@@ -200,6 +205,15 @@ class LoginPage1(Page):
         else:
             Logging.info("PractiTest never loaded")
 
+    def createTCPT(self, testname):
+        logging.info("clicking Test Library Link")
+        self.driver.find_element(*LoginPageLocators.TESTLIBRARYPT).click()
+        logging.info("clicking New Test Link")
+        self.driver.find_element(*LoginPageLocators.NEWTESTPT).click()
+        logging.info("entering test title")
+        self.driver.find_element(*LoginPageLocators.TESTIDPT).send_keys(testname)
+        logging.info("clicking Save Test Case")
+        self.driver.find_element(*LoginPageLocators.TESTCASESUBMITPT).click()
 
     def login_with_valid_user(self, username, pw):
         self.loginuserxray(username, pw)

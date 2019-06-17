@@ -40,6 +40,10 @@ class LoginPageLocators(object):
     SUBMITPT = (By.CSS_SELECTOR, '.btn')
     #TESTCASEPT  = (By.linkText, 'Test Library')
     TESTCASEPT = (By.XPATH, '//img[@alt[contains(., \'Rhlogo\')]]')
+    TESTLIBRARYPT = (By.XPATH, '//a[contains(text(),\'Test Library\')]')
+    NEWTESTPT = (By.XPATH, '//a[contains(text(),\'New Test\')]')
+    TESTIDPT =  (By.ID, 'common_entity_name_text_input')
+    TESTCASESUBMITPT = (By.NAME, 'button')
 
   
 class LogoutPageLocators(object):
@@ -47,8 +51,8 @@ class LogoutPageLocators(object):
     GEARICON    = (By.XPATH, '//img[@src[contains(., \'settings_off\')]]') #what I got from firebug
     SETTINGSON  = (By.XPATH, '//img[@src[contains(., \'settings_on\')]]')
     LOGOUT      = (By.XPATH, '//img[@src[contains(., \'logout\')]]')  
-    HIDE     = (By.XPATH, '//img[@src[contains(., \'hide\')]]')  
-    
+    HIDE     = (By.XPATH, '//img[@src[contains(., \'hide\')]]')
+
     # for maintainability we can seperate web objects by page name
 
 #not used, this is from example
