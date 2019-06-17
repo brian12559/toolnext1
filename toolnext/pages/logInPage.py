@@ -175,6 +175,7 @@ class LoginPage1(Page):
         self.enter_usernamePT(username)
         logging.info("clicking 'LOG IN' button using {0}".format(LoginPageLocators.SUBMITPT))
         self.click_login_buttonPT()
+        time.sleep(1)
         logging.info("Entering password: %s using %s" % (pw, LoginPageLocators.PASSWORDPT))
         self.enter_passwordPT(pw)
         logging.info("clicking 'LOG IN' button using {0}".format(LoginPageLocators.SUBMITPT))
