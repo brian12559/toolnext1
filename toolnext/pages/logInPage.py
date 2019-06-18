@@ -221,7 +221,11 @@ class LoginPage1(Page):
             time.sleep(1)
             self.driver.find_element(*LoginPageLocators.NEWTESTPT).click()
         logging.info("entering test title")
-        self.driver.find_element(*LoginPageLocators.TESTIDPT).send_keys(testname)
+        try:
+            self.driver.find_element(*LoginPageLocators.TESTIDPT).send_keys(testname)
+        except:
+            time.sleep(1)
+            self.driver.find_element(*LoginPageLocators.TESTIDPT).send_keys(testname)
         logging.info("clicking Save Test Case")
         self.driver.find_element(*LoginPageLocators.TESTCASESUBMITPT).click()
 
