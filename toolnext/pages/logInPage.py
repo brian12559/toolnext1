@@ -27,6 +27,9 @@ class LoginPage1(Page):
     def check_pt_loaded(self):
         return True if self.find_element(*LoginPageLocators.TESTCASEPT) else False
 
+    def check_Test_Library(self):
+        return True if self.find_element(*LoginPageLocators.TESTLIBRARYPT) else False
+
     def check_tl_loaded(self):
         return True if self.find_element(*LoginPageLocators.TESTCASEICONTL) else False
 
@@ -207,9 +210,16 @@ class LoginPage1(Page):
 
     def createTCPT(self, testname):
         logging.info("clicking Test Library Link")
-        self.driver.find_element(*LoginPageLocators.TESTLIBRARYPT).click()
+        try:
+            self.driver.find_element(*LoginPageLocators.TESTLIBRARYPT).click()
+        except:
+            self.driver.find_element(*LoginPageLocators.TESTLIBRARYPT2).click()
         logging.info("clicking New Test Link")
-        self.driver.find_element(*LoginPageLocators.NEWTESTPT).click()
+        try:
+            self.driver.find_element(*LoginPageLocators.NEWTESTPT).click()
+        except:
+            time.sleep(1)
+            self.driver.find_element(*LoginPageLocators.NEWTESTPT).click()
         logging.info("entering test title")
         self.driver.find_element(*LoginPageLocators.TESTIDPT).send_keys(testname)
         logging.info("clicking Save Test Case")
