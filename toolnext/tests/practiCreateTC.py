@@ -22,7 +22,7 @@ from selenium import webdriver
 logging.basicConfig(format='%(asctime)s [%(levelname)s] (%(threadName)-2s) %(message)s', level=logging.INFO ,)
 
 
-class practiTestLogin(unittest.TestCase):
+class practiCreateTC(unittest.TestCase):
 
     def setUp(self):
         #set variables, load the browser
