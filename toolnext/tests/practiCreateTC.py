@@ -87,6 +87,9 @@ class practiCreateTC(unittest.TestCase):
                 self.loginPage.login_with_valid_userPT(self.user, self.password)
                 #time.sleep(1)
                 self.loginPage.createTCPT(myTitle)
+                #wait 10 seconds for success message
+                while not ('success' in self.driver.page_source):
+                    time.sleep(1)
                 if ('success' in self.driver.page_source):
                     logging.info("%s created successfully" % myTitle)
                     ltime = str((time.time() - startloading))
