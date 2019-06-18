@@ -44,7 +44,8 @@ class LoginPageLocators(object):
     TESTLIBRARYPT2 = (By.XPATH, '//a[contains(text(),\'Tests\')]')
     REQUIREMENTSPT = (By.XPATH, '//a[contains(text(),\'Requirements\')]')
     #TESTLIBRARYPT = (By.XPATH, '//a[contains(text(),\'Test Library\')]')
-    NEWTESTPT = (By.XPATH, '//a[contains(text(),\'New Test\')]')
+    #NEWTESTPT = (By.XPATH, '//a[contains(text(),\'New Test\')]')
+    NEWTESTPT = (By.CSS_SELECTOR, '.btn-primary:nth-child(1)')
     TESTIDPT =  (By.ID, 'common_entity_name_text_input')
     TESTCASESUBMITPT = (By.NAME, 'button')
 

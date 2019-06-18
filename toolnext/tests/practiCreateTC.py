@@ -90,7 +90,7 @@ class practiCreateTC(unittest.TestCase):
                 if ('success' in self.driver.page_source):
                     logging.info("%s created successfully" % myTitle)
                     ltime = str((time.time() - startloading))
-                    logging.info("time to load PractiTest -> %s" % ltime)
+                    logging.info("time to load PractiTest and Create a Test Case -> %s" % ltime)
                     with open("%s/LoginCreateTCtime.csv" % homedir, "a") as myfile:
                         myfile.write(time.ctime() + "," + ltime + "\n")
                 else:
