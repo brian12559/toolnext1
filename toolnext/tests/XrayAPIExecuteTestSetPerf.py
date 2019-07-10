@@ -61,7 +61,7 @@ class XrayAPItest(unittest.TestCase):
             mylist = []
             testdata = {
                 "info": {
-                    "summary": "Execution of automated tests for release v1.%s; Test Set Imported RHEL tests" % xLoops,
+                    "summary": "Execution of Test Set->Imported RHEL tests, release v1.%s, tester=%s; " % (xLoops, self.tester_id),
                     "description": "This execution is automatically created when importing execution results from an external source",
                     "user": self.tester_id,
                 }}
