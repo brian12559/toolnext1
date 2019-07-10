@@ -25,7 +25,9 @@ class LoginPageLocators(object):
     USERNAMEXRAY = (By.ID, 'login-form-username')
     PASSWORDXRAY = (By.ID, 'login-form-password')
     SUBMITXRAY = (By.ID, 'login-form-submit')
-    ISSUEKEYXRAY = (By.ID, 'raven-test-filter-contains-text')
+    #ISSUEKEYXRAY = (By.ID, 'raven-test-filter-contains-text')
+    #ISSUEKEYXRAY = (By.XPATH, '//a[contains(text(),\'issues\')]')
+    ISSUEKEYXRAY = "Issues"
 
     #for testlab
     USERNAMETL = (By.ID, 'isc_Z')

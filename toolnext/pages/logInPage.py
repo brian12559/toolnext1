@@ -22,7 +22,7 @@ class MainPage(Page):
      
 class LoginPage1(Page):
     def check_xray_loaded(self):
-        return True if self.find_element(*LoginPageLocators.ISSUEKEYXRAY) else False
+        return True if self.driver.find_element_by_link_text(LoginPageLocators.ISSUEKEYXRAY) else False
 
     def check_pt_loaded(self):
         return True if self.find_element(*LoginPageLocators.TESTCASEPT) else False
@@ -125,7 +125,8 @@ class LoginPage1(Page):
         #time.sleep(2)  # it always takes at least 2 secs
         while elapsedtime < 60:
             try:
-                self.driver.find_element(*LoginPageLocators.ISSUEKEYXRAY).clear()
+                #self.driver.find_element(*LoginPageLocators.ISSUEKEYXRAY).clear()
+                self.driver.find_element_by_link_text(LoginPageLocators.ISSUEKEYXRAY)
                 logging.info("Jira issue field exists, so Xray is loaded")
                 break
             except:
