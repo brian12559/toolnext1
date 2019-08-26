@@ -63,13 +63,14 @@ class codeBeamerLogin(unittest.TestCase):
         
 
     def test_login(self):
-        #homedir = os.path.expanduser('~')
-        #homedir = homedir + '//.mozilla//firefox//gu4j04of.default'
+        homedir = os.path.expanduser('~')
+        homedir = homedir + '//.mozilla//firefox//gu4j04of.default'
 
         for z in range(1,self.myLoops+1):
+            profile = webdriver.FirefoxProfile(homedir)
             if self.browser == "ff":
-                self.driver = webdriver.Firefox()
-                #self.driver = webdriver.Firefox(firefox_profile=profile)
+                #self.driver = webdriver.Firefox()
+                self.driver = webdriver.Firefox(firefox_profile=profile)
             else:
                 self.driver = webdriver.Chrome()
 
