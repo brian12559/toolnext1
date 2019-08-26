@@ -64,8 +64,10 @@ class codeBeamerLogin(unittest.TestCase):
 
     def test_login(self):
         for z in range(1,self.myLoops+1):
+            profile = webdriver.FirefoxProfile()
+            profile.accept_untrusted_certs = True
             if self.browser == "ff":
-                self.driver = webdriver.Firefox()
+                self.driver = webdriver.Firefox(firefox_profile=profile)
             else:
                 self.driver = webdriver.Chrome()
 
