@@ -24,6 +24,9 @@ class LoginPage1(Page):
     def check_xray_loaded(self):
         return True if self.driver.find_element_by_link_text(LoginPageLocators.ISSUEKEYXRAY) else False
 
+    def check_cb_loaded(self):
+        return True if self.driver.find_element_by_link_text(LoginPageLocators.CBLINK) else False
+
     def check_pt_loaded(self):
         return True if self.find_element(*LoginPageLocators.TESTCASEPT) else False
 
@@ -38,6 +41,18 @@ class LoginPage1(Page):
     
     def enter_username(self, username):
         self.driver.find_element(*LoginPageLocators.USERNAMEXRAY).send_keys(username)
+
+    def enter_usernameCB(self, username, cbLoc):
+        logging.info("Entering username: %s using %s" % (username, cbLoc))
+        self.driver.find_element(*cbLoc).send_keys(username)
+
+    def enter_passwordCB(self, pw, cbLoc):
+        logging.info("Entering password: %s using %s" % (pw, cbLoc))
+        self.driver.find_element(*cbLoc).send_keys(pw)
+
+    def click_login_buttonCB(self, cbLoc):
+        logging.info("clicking 'LOG IN' button using {0}".format(cbLoc))
+        self.driver.find_element(*cbLoc).click()
 
     def enter_usernamePT(self, username):
         self.driver.find_element(*LoginPageLocators.USERNAMEPT).send_keys(username)
@@ -141,6 +156,34 @@ class LoginPage1(Page):
         else:
             Logging.info("Xray never loaded")
 
+    #new way of doing things.  switch others to this method
+    #although we can improve even more, but not necessary as we probably wont need this anymore
+    def loginuserCB(self, username, pw):
+        homedir = os.path.expanduser('~')
+        # might need clear
+        self.enter_usernameCB(username, LoginPageLocators.USERNAMECB)
+        self.enter_passwordCB(pw, LoginPageLocators.PASSWORDCB)
+        startloading = time.time()
+        self.click_login_buttonCB(LoginPageLocators.SUBMITCB)
+        elapsedtime = time.time() - startloading
+        # time.sleep(2)  # it always takes at least 2 secs
+        while elapsedtime < 60:
+            try:
+                self.driver.find_element_by_link_text(LoginPageLocators.CBLINK)
+                logging.info("My Start Link exists, so CodeBeamer is loaded")
+                break
+            except:
+                elapsedtime = time.time() - startloading
+                logging.info("still waiting...%s" % str(elapsedtime))
+                time.sleep(1)
+        if self.check_cb_loaded():
+            ltime = str((time.time() - startloading))
+            logging.info("time to load CodeBeamer -> %s" % ltime)
+            with open("%s/LoginTime.csv" % homedir, "a") as myfile:
+                myfile.write(time.ctime() + "," + ltime + "\n")
+        else:
+            Logging.info("CodeBeamer never loaded")
+
     def loginuserTL(self, username, pw):
         time.sleep(1)
         homedir = os.path.expanduser('~')
@@ -232,6 +275,10 @@ class LoginPage1(Page):
 
     def login_with_valid_user(self, username, pw):
         self.loginuserxray(username, pw)
+        return HomePage(self.driver)
+
+    def login_with_valid_userCB(self, username, pw):
+        self.loginuserCB(username, pw)
         return HomePage(self.driver)
 
     def login_with_valid_userTL(self, username, pw):

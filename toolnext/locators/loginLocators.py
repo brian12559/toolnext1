@@ -29,6 +29,12 @@ class LoginPageLocators(object):
     #ISSUEKEYXRAY = (By.XPATH, '//a[contains(text(),\'issues\')]')
     ISSUEKEYXRAY = "Create"
 
+    # for codebeamer
+    USERNAMECB = (By.ID, 'user')
+    PASSWORDCB = (By.ID, 'password')
+    SUBMITCB = (By.CSS_SELECTOR, '.login_button')
+    CBLINK = "My Start"
+
     #for testlab
     USERNAMETL = (By.ID, 'isc_Z')
     PASSWORDTL = (By.ID, 'isc_13')
