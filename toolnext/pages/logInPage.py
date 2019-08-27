@@ -158,16 +158,16 @@ class LoginPage1(Page):
 
     #new way of doing things.  switch others to this method
     #although we can improve even more, but not necessary as we probably wont need this anymore
-    def loginuserCB(self, username, pw):
+    def loginuserCB(self, username, pw, time1):
         homedir = os.path.expanduser('~')
         # might need clear
         self.enter_usernameCB(username, LoginPageLocators.USERNAMECB)
         self.enter_passwordCB(pw, LoginPageLocators.PASSWORDCB)
-        startloading = time.time()
+        startloading = time.time() + time1
         self.click_login_buttonCB(LoginPageLocators.SUBMITCB)
-        elapsedtime = time.time() - startloading
+        elapsedtime = time.time()
         # time.sleep(2)  # it always takes at least 2 secs
-        while elapsedtime < 60:
+        while elapsedtime < 180:
             try:
                 self.driver.find_element_by_link_text(LoginPageLocators.CBLINK)
                 logging.info("My Start Link exists, so CodeBeamer is loaded")
@@ -177,7 +177,7 @@ class LoginPage1(Page):
                 logging.info("still waiting...%s" % str(elapsedtime))
                 time.sleep(1)
         if self.check_cb_loaded():
-            ltime = str((time.time() - startloading))
+            ltime = str((time.time() - time1))
             logging.info("time to load CodeBeamer -> %s" % ltime)
             with open("%s/LoginTime.csv" % homedir, "a") as myfile:
                 myfile.write(time.ctime() + "," + ltime + "\n")
@@ -277,8 +277,8 @@ class LoginPage1(Page):
         self.loginuserxray(username, pw)
         return HomePage(self.driver)
 
-    def login_with_valid_userCB(self, username, pw):
-        self.loginuserCB(username, pw)
+    def login_with_valid_userCB(self, username, pw, time1):
+        self.loginuserCB(username, pw, time1)
         return HomePage(self.driver)
 
     def login_with_valid_userTL(self, username, pw):

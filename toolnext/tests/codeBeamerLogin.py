@@ -63,14 +63,14 @@ class codeBeamerLogin(unittest.TestCase):
         
 
     def test_login(self):
-        homedir = os.path.expanduser('~')
-        homedir = homedir + '//.mozilla//firefox//gu4j04of.default'
+        #homedir = os.path.expanduser('~')
+        #homedir = homedir + '//.mozilla//firefox//gu4j04of.default'
 
         for z in range(1,self.myLoops+1):
-            profile = webdriver.FirefoxProfile(homedir)
+            #profile = webdriver.FirefoxProfile(homedir)
             if self.browser == "ff":
-                #self.driver = webdriver.Firefox()
-                self.driver = webdriver.Firefox(firefox_profile=profile)
+                self.driver = webdriver.Firefox()
+                #self.driver = webdriver.Firefox(firefox_profile=profile)
             else:
                 self.driver = webdriver.Chrome()
 
@@ -80,8 +80,9 @@ class codeBeamerLogin(unittest.TestCase):
             self.logoutPage = LogoutPage(self.driver)
             logging.info("Test logging into Xray")
             logging.info("loading url %s" % self.url)
+            self.timer1 = time.time()
             self.loader.open(self.url) #or this
-            self.loginPage.login_with_valid_userCB(self.user, self.password)
+            self.loginPage.login_with_valid_userCB(self.user, self.password, self.timer1)
             time.sleep(1)
             logging.info("Closing browser")
             self.driver.quit()
