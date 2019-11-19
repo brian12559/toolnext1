@@ -20,10 +20,10 @@ class XrayAPItest(unittest.TestCase):
         logging.info("Function Setup()") 
         logging.info('Current Working Directory: %s' % os.getcwd())
         self.url = "https://projects.devel.engineering.redhat.com"
-        self.xLimit = 200  #our limit and current Jira API limit
-        self.tester_id = "stester1"
-        self.tester_pw = "!RHtoolnext1"
-        self.testSetID = "TOOL3-3537"
+        self.xLimit = 200  #was 200 our limit and current Jira API limit
+        self.tester_id = "bmurray"
+        self.tester_pw = "redhat123"
+        self.testSetID = "TOOL1-25930"
         self.maxLoops = 2
         # read file ini test params file from this folder to get parameters
         if (os.path.isfile('toolnext.ini')):
@@ -66,10 +66,10 @@ class XrayAPItest(unittest.TestCase):
                     "user": self.tester_id,
                 }}
 
-            for z in range (1, 200):
+            for z in range (1, 200):  #was 200
 
                 #get results 200 at a time
-                res = requests.get("https://projects.devel.engineering.redhat.com/rest/raven/1.0/api/testset/%s/test?limit=%s&page=%s" % (self.testSetID, self.xLimit, z),
+                res = requests.get("http://jira-dc-servere.hosts.prod.upshift.rdu2.redhat.com/rest/raven/1.0/api/testset/%s/test?limit=%s&page=%s" % (self.testSetID, self.xLimit, z),
                                    verify=('/etc/ssl/certs/ca-bundle.crt'),
                                    auth=(self.tester_id, self.tester_pw))
 
@@ -101,7 +101,7 @@ class XrayAPItest(unittest.TestCase):
                 time.sleep(2)
 
             #send up the total results
-            res = requests.post("https://projects.devel.engineering.redhat.com/rest/raven/1.0/import/execution",
+            res = requests.post("http://jira-dc-servere.hosts.prod.upshift.rdu2.redhat.com/rest/raven/1.0/import/execution",
                                auth=(self.tester_id, self.tester_pw),
                                verify=('/etc/ssl/certs/ca-bundle.crt'),
                                headers={'content-type': 'application/json'},
